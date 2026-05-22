@@ -65,10 +65,10 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 }
 /* ── LANDING HERO ── */
 .landing-hero{display:flex;flex-direction:column;align-items:center;margin-bottom:24px;position:relative;}
-.welcome-rule{display:flex;align-items:center;gap:22px;margin-bottom:22px;}
+.welcome-rule{display:none;}
 .welcome-line{width:56px;height:2px;background:var(--green);}
 .welcome-text{font-size:17px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#333;}
-.landing-logo-hero svg{height:96px;width:auto;display:block;margin-bottom:24px;}
+.landing-logo-hero svg{height:64px;width:auto;display:block;margin-bottom:24px;}
 .landing-welcome-hl{
   font-size:56px;font-weight:900;color:#1a1a1a;letter-spacing:-2px;
   text-align:center;line-height:1.0;margin-bottom:6px;
@@ -185,7 +185,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 
 /* ── CONTENT AREA ── */
 .sv-content{flex:1;overflow-y:auto;padding:52px 64px 80px;}
-.content-inner{max-width:700px;}
+.content-inner{max-width:860px;}
 
 .content-eyebrow-wrap{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
 .content-eyebrow-line{width:24px;height:2px;background:var(--green);}
@@ -399,14 +399,15 @@ button:focus-visible,
 .sv-body{ overflow:hidden; cursor:pointer; }
 .sv-body button, .sv-body a, .sv-body input, .sv-body select{ cursor:default; }
 
-/* ── Panel de contenido (izquierda — siempre 56%) ── */
+/* ── Panel de contenido — ancho completo ── */
 .sv-content{
-  width:56%;flex:none;
+  flex:1;width:auto;
   overflow-y:auto;
-  padding:28px 48px 28px;
+  padding:48px 80px 80px;
 }
 
-/* ── Panel derecho: imagen real o decoración (siempre visible) ── */
+/* ── Panel derecho: oculto en Handbook (sin imágenes) ── */
+.sv-img-panel{ display:none !important; }
 .sv-img-panel{
   flex:1;position:relative;overflow:hidden;
   border-radius:16px;
@@ -686,7 +687,7 @@ button:focus-visible,
 
 /* ── Short screens: laptops 768-850px de alto ── */
 @media (max-height:850px) and (min-width:580px){
-  .landing-logo-hero svg{ height:72px;margin-bottom:16px; }
+  .landing-logo-hero svg{ height:52px;margin-bottom:16px; }
   .landing-welcome-hl{ font-size:44px; }
   .welcome-rule{ margin-bottom:14px; }
   .landing-hero{ margin-bottom:16px; }
@@ -695,7 +696,7 @@ button:focus-visible,
   .area-card{ padding:16px 18px 14px; }
 }
 @media (max-height:700px) and (min-width:580px){
-  .landing-logo-hero svg{ height:56px;margin-bottom:12px; }
+  .landing-logo-hero svg{ height:42px;margin-bottom:12px; }
   .landing-welcome-hl{ font-size:34px;letter-spacing:-1px; }
   .welcome-text{ font-size:14px; }
   .welcome-rule{ margin-bottom:10px;gap:16px; }
@@ -725,7 +726,7 @@ button:focus-visible,
   .welcome-rule{ margin-bottom:16px; }
   .welcome-text{ font-size:14px;letter-spacing:2.5px; }
   .welcome-line{ width:40px; }
-  .landing-logo-hero svg{ height:76px;margin-bottom:18px; }
+  .landing-logo-hero svg{ height:54px;margin-bottom:18px; }
   .landing-welcome-hl{ font-size:38px;letter-spacing:-1px; }
   .landing-sub{ font-size:14px;margin-bottom:18px; }
   .cards-grid{ grid-template-columns:repeat(2,1fr);gap:10px; }
