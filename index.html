@@ -6,12 +6,12 @@
 <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 <title>Corporate Manual — 10Pearls</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --green:#D4FF27;
-  --green-dim:rgba(212,255,39,0.15);
-  --green-dim2:rgba(212,255,39,0.08);
+  --green:#6366F1;
+  --green-dim:rgba(99,102,241,0.15);
+  --green-dim2:rgba(99,102,241,0.08);
 
   --bg:#ffffff;
   --bg-card:#f8f9fa;
@@ -23,7 +23,7 @@
   --border:#e4e4e4;
   --sidebar-w:256px;
 }
-html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito Sans','Proxima Nova',Arial,sans-serif;color:#1a1a1a}
+html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Figtree',Arial,sans-serif;color:#1a1a1a}
 
 /* ── NAV ── */
 .landing-nav{
@@ -39,7 +39,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
   border-radius:100px;
 }
 .ui-lang-btn{
-  font-family:'Nunito Sans',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;
+  font-family:'Figtree',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;
   text-transform:uppercase;padding:6px 14px;border:none;background:none;
   color:rgba(0,0,0,0.38);cursor:pointer;transition:all .2s;border-radius:100px;
 }
@@ -60,23 +60,20 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .bg-glow{
   position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);
   width:700px;height:400px;
-  background:radial-gradient(ellipse,rgba(212,255,39,0.18) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(99,102,241,0.18) 0%,transparent 70%);
   pointer-events:none;
 }
 /* ── LANDING HERO ── */
 .landing-hero{display:flex;flex-direction:column;align-items:center;margin-bottom:24px;position:relative;}
 .welcome-rule{display:none;}
 .welcome-line{width:56px;height:2px;background:var(--green);}
-.welcome-text{font-size:17px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#333;}
+.welcome-text{font-size:17px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#333;}
 .landing-logo-hero svg{height:64px;width:auto;display:block;margin-bottom:24px;}
 .landing-welcome-hl{
-  font-size:56px;font-weight:900;color:#1a1a1a;letter-spacing:-2px;
+  font-size:56px;font-weight:700;color:#1a1a1a;letter-spacing:-2px;
   text-align:center;line-height:1.0;margin-bottom:6px;
 }
-.landing-welcome-hl em{
-  display:inline-block;background:var(--green);
-  padding:2px 14px;font-style:normal;letter-spacing:-1px;
-}
+.landing-welcome-hl em{font-style:normal;color:var(--green);}
 .landing-sub{font-size:15px;font-weight:300;color:var(--gray);text-align:center;line-height:1.65;max-width:580px;margin-bottom:24px;position:relative;}
 .landing-sub strong{color:#1a1a1a;font-weight:700;}
 
@@ -95,7 +92,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
   width:28px;height:28px;background:var(--green);
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
-.start-btn .start-icon svg{ width:12px;height:12px;color:#111; }
+.start-btn .start-icon svg{ width:12px;height:12px;color:#fff; }
 .start-btn-sub{
   margin-top:10px;font-size:10px;font-weight:600;letter-spacing:1.5px;
   text-transform:uppercase;color:rgba(0,0,0,0.35);text-align:center;
@@ -117,13 +114,13 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 }
 .area-card:hover .card-top-line{opacity:1;}
 .card-icon{
-  width:34px;height:34px;background:var(--green);color:#111111;
+  width:34px;height:34px;background:var(--green);color:#fff;
   display:flex;align-items:center;justify-content:center;
   padding:7px;margin-bottom:12px;flex-shrink:0;
 }
 .card-icon svg{width:100%;height:100%;}
 .card-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#aaa;margin-bottom:6px;text-transform:uppercase;}
-.card-title{font-size:17px;font-weight:900;letter-spacing:-.4px;line-height:1.2;margin-bottom:7px;color:#1a1a1a;}
+.card-title{font-size:17px;font-weight:700;letter-spacing:-.4px;line-height:1.2;margin-bottom:7px;color:#1a1a1a;}
 .card-desc{font-size:13px;font-weight:400;color:var(--gray);line-height:1.6;flex:1;margin-bottom:14px;}
 .card-owner{display:none;}
 .card-cta{
@@ -157,7 +154,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .back-btn:hover{color:#fff;}
 .back-btn svg{width:14px;height:14px;transition:transform .2s;}
 .back-btn:hover svg{transform:translateX(-3px);}
-.sv-area-tag{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);border:1px solid rgba(212,255,39,.3);padding:4px 12px;}
+.sv-area-tag{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);border:1px solid rgba(99,102,241,.3);padding:4px 12px;}
 
 .sv-body{display:flex;flex:1;overflow:hidden;}
 
@@ -178,7 +175,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
   color:var(--gray);transition:color .2s,background .2s;border-left:2px solid transparent;
 }
 .sidebar-item:hover{color:#1a1a1a;background:rgba(0,0,0,0.04);}
-.sidebar-item.active{color:#1a1a1a;border-left-color:var(--green);background:rgba(212,255,39,0.14);}
+.sidebar-item.active{color:#1a1a1a;border-left-color:var(--green);background:rgba(99,102,241,0.14);}
 .sidebar-item-icon{width:16px;height:16px;flex-shrink:0;opacity:.7;}
 .sidebar-item.active .sidebar-item-icon{opacity:1;}
 .sidebar-num{font-size:10px;font-weight:700;color:inherit;opacity:.55;min-width:18px;}
@@ -191,14 +188,14 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .content-eyebrow-line{width:24px;height:2px;background:var(--green);}
 .content-eyebrow{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#1a1a1a;}
 
-.content-headline{font-size:40px;font-weight:900;letter-spacing:-1.2px;line-height:1.2;margin-bottom:22px;color:#1a1a1a;}
-.content-headline em{font-style:normal;background:var(--green);color:#111111;padding:1px 7px 3px;display:inline;}
+.content-headline{font-size:40px;font-weight:700;letter-spacing:-1.2px;line-height:1.2;margin-bottom:22px;color:#1a1a1a;}
+.content-headline em{font-style:normal;color:var(--green);}
 
 .content-body{font-size:16px;font-weight:400;color:var(--gray);line-height:1.85;margin-bottom:24px;}
 .content-body strong{color:#1a1a1a;font-weight:700;}
 
 .content-highlight{
-  background:rgba(212,255,39,0.14);border-left:3px solid var(--green);
+  background:rgba(99,102,241,0.14);border-left:3px solid var(--green);
   padding:16px 20px;margin:24px 0;
   font-size:15px;font-weight:600;color:#1a1a1a;line-height:1.65;
 }
@@ -240,11 +237,11 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .list-item-icon{
   width:32px;height:32px;flex-shrink:0;
   background:var(--green);display:flex;align-items:center;justify-content:center;
-  color:#111111;margin-top:1px;
+  color:#fff;margin-top:1px;
 }
 .list-item-icon svg{width:16px;height:16px;}
 .list-item-text{}
-.list-item-title{font-size:15px;font-weight:800;letter-spacing:.1px;margin-bottom:4px;color:#1a1a1a;}
+.list-item-title{font-size:15px;font-weight:700;letter-spacing:.1px;margin-bottom:4px;color:#1a1a1a;}
 .list-item-desc{font-size:15px;font-weight:400;color:var(--gray);line-height:1.65;}
 
 /* ── GRID TYPE ── */
@@ -258,17 +255,17 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .grid-card:hover{border-color:rgba(90,110,0,.2);transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,0.07);}
 .grid-letter{
   width:36px;height:36px;display:flex;align-items:center;justify-content:center;
-  background:var(--green);color:#111111;font-size:13px;font-weight:900;
+  background:var(--green);color:#fff;font-size:13px;font-weight:700;
   letter-spacing:.5px;margin-bottom:14px;
 }
-.grid-title{font-size:15px;font-weight:800;margin-bottom:6px;color:#1a1a1a;}
+.grid-title{font-size:15px;font-weight:700;margin-bottom:6px;color:#1a1a1a;}
 .grid-desc{font-size:15px;font-weight:400;color:var(--gray);line-height:1.65;}
 
 /* ── SECTION HEADER ICON ── */
 .section-icon-wrap{
   width:48px;height:48px;background:var(--green);
   display:flex;align-items:center;justify-content:center;
-  color:#111111;margin-bottom:28px;
+  color:#fff;margin-bottom:28px;
 }
 .section-icon-wrap svg{width:24px;height:24px;}
 
@@ -280,7 +277,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
 .sv-nav-arrows{flex:1;display:flex;align-items:center;justify-content:flex-end;gap:8px;}
 /* ── SECTION VIEW LANG SWITCHER ── */
 .sv-lang-wrap{display:flex;padding:2px;gap:0;background:rgba(255,255,255,0.12);border-radius:100px;margin-right:4px;}
-.sv-lang-btn{font-family:'Nunito Sans',Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border:none;background:none;color:rgba(255,255,255,0.5);cursor:pointer;transition:all .2s;border-radius:100px;}
+.sv-lang-btn{font-family:'Figtree',Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border:none;background:none;color:rgba(255,255,255,0.5);cursor:pointer;transition:all .2s;border-radius:100px;}
 .sv-lang-btn.on{background:rgba(255,255,255,0.22);color:#fff;}
 .sv-lang-btn:not(.on):hover{color:#fff;}
 .nav-arrow{
@@ -288,7 +285,7 @@ html,body{width:100%;min-height:100vh;background:var(--bg);font-family:'Nunito S
   background:none;border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.65);cursor:pointer;
   transition:all .2s;
 }
-.nav-arrow:hover:not(:disabled){border-color:rgba(212,255,39,.5);color:var(--green);}
+.nav-arrow:hover:not(:disabled){border-color:rgba(99,102,241,.5);color:var(--green);}
 .nav-arrow:disabled{opacity:.25;cursor:default;}
 .nav-arrow svg{width:14px;height:14px;}
 
@@ -329,7 +326,7 @@ button:focus-visible,
 .logo-strip{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px;align-items:center;}
 .logo-badge{display:flex;align-items:center;justify-content:center;height:68px;min-width:100px;padding:10px 22px;background:#fff;border:none;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.10);overflow:hidden;}
 .logo-badge svg,.logo-badge img{height:44px;width:auto;max-width:180px;display:block;object-fit:contain;}
-.logo-badge-text{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:rgba(0,0,0,0.45);}
+.logo-badge-text{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(0,0,0,0.45);}
 
 /* ── ACKNOWLEDGMENT BOX ── */
 .content-ack{
@@ -345,7 +342,7 @@ button:focus-visible,
 .content-ack-icon svg{width:17px;height:17px;}
 .content-ack-body{}
 .content-ack-label{
-  font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
   color:#1a1a1a;margin-bottom:6px;
 }
 .content-ack-text{
@@ -383,7 +380,7 @@ button:focus-visible,
   background:none;border:1px solid rgba(255,255,255,0.18);
   color:rgba(255,255,255,0.65);cursor:pointer;transition:all .2s;flex-shrink:0;
 }
-.sidebar-toggle-btn:hover{ border-color:rgba(212,255,39,.5);color:var(--green); }
+.sidebar-toggle-btn:hover{ border-color:rgba(99,102,241,.5);color:var(--green); }
 .sidebar-toggle-btn svg{ width:16px;height:16px; }
 
 /* ── Botón fullscreen ── */
@@ -392,7 +389,7 @@ button:focus-visible,
   background:none;border:1px solid rgba(255,255,255,0.18);
   color:rgba(255,255,255,0.65);cursor:pointer;transition:all .2s;
 }
-.fullscreen-btn:hover{ border-color:rgba(212,255,39,.5);color:var(--green); }
+.fullscreen-btn:hover{ border-color:rgba(99,102,241,.5);color:var(--green); }
 .fullscreen-btn svg{ width:14px;height:14px; }
 
 /* ── sv-body: ocupa el espacio restante sin scroll ── */
@@ -551,17 +548,17 @@ button:focus-visible,
 .sv-deco::after{
   content:'';position:absolute;
   width:260px;height:260px;
-  background:radial-gradient(ellipse,rgba(212,255,39,0.18) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(99,102,241,0.18) 0%,transparent 70%);
   pointer-events:none;
 }
 .sv-deco-icon{
   width:120px;height:120px;
-  background:rgba(212,255,39,0.14);
-  border:1.5px solid rgba(212,255,39,0.35);
+  background:rgba(99,102,241,0.14);
+  border:1.5px solid rgba(99,102,241,0.35);
   border-radius:30px;
   display:flex;align-items:center;justify-content:center;
   position:relative;z-index:1;
-  box-shadow:0 4px 32px rgba(212,255,39,0.12),0 1px 8px rgba(0,0,0,0.06);
+  box-shadow:0 4px 32px rgba(99,102,241,0.12),0 1px 8px rgba(0,0,0,0.06);
 }
 .sv-deco-icon svg{
   width:56px;height:56px;
@@ -588,7 +585,7 @@ button:focus-visible,
 .ac-glow{
   position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);
   width:600px;height:300px;
-  background:radial-gradient(ellipse,rgba(212,255,39,0.12) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(99,102,241,0.12) 0%,transparent 70%);
   pointer-events:none;
 }
 .ac-inner{
@@ -599,7 +596,7 @@ button:focus-visible,
 }
 .ac-num{
   font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
-  color:var(--green);border:1px solid rgba(212,255,39,0.3);padding:6px 18px;
+  color:var(--green);border:1px solid rgba(99,102,241,0.3);padding:6px 18px;
 }
 .ac-area-dots{ display:flex;gap:10px; }
 .ac-area-dot{
@@ -608,7 +605,7 @@ button:focus-visible,
 }
 .ac-area-dot.on{ background:var(--green); }
 .ac-title{
-  font-size:48px;font-weight:900;letter-spacing:-1.5px;line-height:1.1;
+  font-size:48px;font-weight:700;letter-spacing:-1.5px;line-height:1.1;
   color:#fff;margin-bottom:14px;
 }
 .ac-desc{
@@ -659,12 +656,12 @@ button:focus-visible,
 }
 .acro-letter-col{
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  background:#D4FF27;
+  background:#6366F1;color:#fff;
   min-width:46px;padding:10px 0;
   flex-shrink:0;
 }
 .acro-letter{
-  font-size:19px;font-weight:900;color:#1a1a1a;
+  font-size:19px;font-weight:700;color:#1a1a1a;
   line-height:1;letter-spacing:0;
 }
 .acro-letter-word{
@@ -673,7 +670,7 @@ button:focus-visible,
   margin-top:2px;max-width:42px;text-align:center;line-height:1.2;
 }
 .acro-content{flex:1;padding:9px 14px;display:flex;flex-direction:column;justify-content:center;}
-.acro-title{font-size:15px;font-weight:800;color:#1a1a1a;margin-bottom:2px;}
+.acro-title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
 .acro-desc{font-size:13px;color:#555;line-height:1.5;}
 .content-grid{ gap:8px;margin-top:6px; }
 .grid-card{ padding:13px 15px; }
@@ -927,7 +924,7 @@ button:focus-visible,
 #firma-overlay .bg-glow{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   width:600px;height:360px;
-  background:radial-gradient(ellipse,rgba(212,255,39,0.10) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(99,102,241,0.10) 0%,transparent 70%);
   pointer-events:none;
 }
 .firma-inner{
@@ -938,13 +935,13 @@ button:focus-visible,
 .firma-badge{
   display:inline-flex;align-items:center;justify-content:center;
   width:52px;height:52px;
-  background:rgba(212,255,39,0.12);
+  background:rgba(99,102,241,0.12);
   border-radius:50%;
   color:var(--green);
   margin-bottom:1.25rem;
 }
 .firma-title{
-  font-size:1.65rem;font-weight:800;
+  font-size:1.65rem;font-weight:700;
   color:#fff;letter-spacing:-.03em;
   margin-bottom:.5rem;
 }
@@ -961,7 +958,7 @@ button:focus-visible,
   border-radius:10px;
   padding:.75rem 1rem;
   color:#fff;font-size:.95rem;
-  font-family:'Nunito Sans',Arial,sans-serif;
+  font-family:'Figtree',Arial,sans-serif;
   outline:none;transition:border-color .2s;
   width:100%;
 }
@@ -974,10 +971,10 @@ button:focus-visible,
 .firma-error.show{ display:block; }
 .firma-submit{
   width:100%;padding:.85rem;
-  background:var(--green);color:#111;
+  background:var(--green);color:#fff;
   border:none;border-radius:10px;
-  font-size:1rem;font-weight:800;
-  font-family:'Nunito Sans',Arial,sans-serif;
+  font-size:1rem;font-weight:700;
+  font-family:'Figtree',Arial,sans-serif;
   cursor:pointer;
   transition:opacity .2s;
   margin-top:.4rem;
@@ -993,12 +990,12 @@ button:focus-visible,
 .firma-ok.show{ display:flex;flex-direction:column;align-items:center;gap:.85rem; }
 .firma-ok-icon{
   width:68px;height:68px;
-  background:rgba(212,255,39,0.12);
+  background:rgba(99,102,241,0.12);
   border-radius:50%;display:flex;align-items:center;justify-content:center;
   color:var(--green);
 }
 .firma-ok-title{
-  font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:-.02em;
+  font-size:1.5rem;font-weight:700;color:#fff;letter-spacing:-.02em;
 }
 .firma-ok-sub{ font-size:.88rem;color:rgba(255,255,255,.45);text-align:center;line-height:1.6; }
 .firma-x{
@@ -1019,7 +1016,7 @@ button:focus-visible,
   border:1.5px solid rgba(255,255,255,.18);
   border-radius:8px;padding:.6rem 1.75rem;
   color:rgba(255,255,255,.55);
-  font-size:.83rem;font-family:'Nunito Sans',Arial,sans-serif;
+  font-size:.83rem;font-family:'Figtree',Arial,sans-serif;
   cursor:pointer;transition:all .2s;
 }
 .firma-close-btn:hover{ border-color:rgba(255,255,255,.4);color:#fff; }
@@ -1028,7 +1025,7 @@ button:focus-visible,
   border:1px solid rgba(255,255,255,.1);
   border-radius:8px;padding:.45rem 1.25rem;
   color:rgba(255,255,255,.35);
-  font-size:.75rem;font-family:'Nunito Sans',Arial,sans-serif;
+  font-size:.75rem;font-family:'Figtree',Arial,sans-serif;
   cursor:pointer;transition:all .2s;
 }
 .firma-export-btn:hover{ color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.28); }
@@ -1045,7 +1042,7 @@ button:focus-visible,
 .fsp-icon{
   flex-shrink:0;
   width:44px;height:44px;
-  background:rgba(212,255,39,0.12);
+  background:rgba(99,102,241,0.12);
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   color:var(--green);
@@ -1053,18 +1050,18 @@ button:focus-visible,
 .fsp-icon svg{ width:20px;height:20px; }
 .fsp-text{ text-align:left; }
 .fsp-title{
-  font-size:1rem;font-weight:800;color:#fff;
+  font-size:1rem;font-weight:700;color:#fff;
   margin-bottom:.25rem;letter-spacing:-.01em;
 }
 .fsp-sub{ font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.5; }
 .fsp-btn{
   flex-shrink:0;
   display:inline-flex;align-items:center;gap:.5rem;
-  background:var(--green);color:#111;
+  background:var(--green);color:#fff;
   border:none;border-radius:10px;
   padding:.75rem 1.4rem;
-  font-size:.88rem;font-weight:800;letter-spacing:.3px;
-  font-family:'Nunito Sans',Arial,sans-serif;
+  font-size:.88rem;font-weight:700;letter-spacing:.3px;
+  font-family:'Figtree',Arial,sans-serif;
   cursor:pointer;transition:opacity .2s,transform .15s;
   white-space:nowrap;
 }
